@@ -264,6 +264,9 @@ public class MachineModel {
 	public void setMemoryBase(int val) {
 		cpu.memoryBase = val;
 	}
+	public Instruction get(int index) {
+		 return INSTRUCTIONS.get(index);
+	 }
 	private class CPU{
 		private int accumulator;
 		private int instructionPointer;
