@@ -240,8 +240,8 @@ public class MachineModel {
 	public int getData(int index) {
 		return memory.getData(index);
 	}
-	public int[] getDataArray() {
-		return memory.getDataArray();
+	public int[] getData() {
+		return memory.getData();
 	}
 	public void setData(int index, int value) {
 		memory.setData(index, value);
