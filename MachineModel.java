@@ -237,7 +237,33 @@ public class MachineModel {
 	public MachineModel() {
 		this(false, null);
 	}
-	
+	public int getData(int index) {
+		return memory.getData(index);
+	}
+	public int[] getDataArray() {
+		return memory.getDataArray();
+	}
+	public void setData(int index, int value) {
+		memory.setData(index, value);
+	}
+	public int getAccumulator() {
+		return cpu.accumulator;
+	}
+	public void setAccumulator(int val) {
+		cpu.accumulator = val;
+	}
+	public int getInstructionPointer() {
+		return cpu.instructionPointer;
+	}
+	public void setInstructionPointer(int val) {
+		cpu.instructionPointer = val;
+	}
+	public int getMemoryBase() {
+		return cpu.memoryBase;
+	}
+	public void setMemoryBase(int val) {
+		cpu.memoryBase = val;
+	}
 	private class CPU{
 		private int accumulator;
 		private int instructionPointer;
