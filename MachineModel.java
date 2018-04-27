@@ -268,7 +268,7 @@ public class MachineModel {
 		 return INSTRUCTIONS.get(index);
 	 }
 	
-	public int getCode() {
+	public int[] getCode() {
 		return memory.getCode();
 	}
 	
@@ -281,7 +281,7 @@ public class MachineModel {
 	}
 	
 	public void setCode(int index, int op, int arg) {
-		return memory.setCode(index, op, arg);
+		memory.setCode(index, op, arg);
 	}
 	
 	private class CPU{
